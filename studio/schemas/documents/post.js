@@ -12,6 +12,18 @@ export default {
       description: 'Titles should be catchy, descriptive, and not too long'
     },
     {
+      name: 'quote',
+      type: 'string',
+      title: 'Quote',
+      description: "Quotes aren't required, but they'll make the post better."
+    },
+    {
+      name: 'quoteName',
+      type: 'string',
+      title: 'Quote Name',
+      description: 'Hey, who said that?'
+    },
+    {
       name: 'slug',
       type: 'slug',
       title: 'Slug',
