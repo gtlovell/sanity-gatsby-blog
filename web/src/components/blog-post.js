@@ -29,8 +29,13 @@ function BlogPost (props) {
         <div className={styles.grid}>
           <div className={styles.mainContent}>
             <h1 className={styles.title}>{title}</h1>
-            <h4 className={styles.quote}>{quote}</h4>
-            <h6 className={styles.quoteName}>{quoteName}</h6>
+            <div className={styles.blockquote}>
+              <p className={styles.quote}>{quote}</p>
+              <p className={styles.quoteName}>
+                {'— '}
+                {quoteName}
+              </p>
+            </div>
             {_rawBody && <PortableText blocks={_rawBody} />}
           </div>
           <aside className={styles.metaContent}>

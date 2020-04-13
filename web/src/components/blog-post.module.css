@@ -1,19 +1,35 @@
 @import "../styles/custom-media.css";
 @import "../styles/custom-properties.css";
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto+Slab:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&family=Roboto+Slab:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,600;0,400;1,500&display=swap");
 
 .root {
   @nest & .quote {
-    border-left: 1px solid #000;
-    font-family: "Roboto Slab", serif;
-    font-size: 30px;
-    font-weight: 200;
-    color: #000;
-    padding-left: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--color-dark-white);
+    padding-top: 10px;
   }
 
   @nest & .quoteName {
-    font-family: "Montserrat", sans-serif;
+    font-family: "EB Garamond", serif;
+    font-size: 20px;
+    font-style: italic;
+    padding-bottom: 10px;
+    color: var(--color-accent);
+  }
+
+  @nest & .blockquote {
+    background-color: var(--color-light-black);
+    border-left: 2px solid var(--color-accent);
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @nest & .title {
+    font-family: "EB Garamond", serif;
+    font-weight: 400;
   }
 }
 

@@ -10,10 +10,10 @@
 :root {
   /* Brand colors */
 
-  --brand-primary: #48e9ce;
+  --brand-primary: #000000;
   --brand-primary--inverted: #ffffff;
   --brand-secondary: #2a2a47;
-  --brand-secondary--inverted: #9e9eff;
+  --brand-secondary--inverted: #000000;
 
   /* General */
   --grey-base: #2a2a47;
@@ -29,6 +29,6 @@
 
   /* Main Navigation */
 
-  --main-navigation-color: var(--brand-secondary);
+  --main-navigation-color: var(--brand-primary--inverted);
   --main-navigation-color--inverted: var(--brand-secondary--inverted);
 }
